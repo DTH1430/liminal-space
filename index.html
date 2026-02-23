@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liminal Spaces — The Places Between</title>
+  <meta name="description" content="Explore the unsettling beauty of liminal spaces — empty corridors, abandoned malls, silent pools. The places that exist between destinations.">
+  <meta property="og:title" content="Liminal Spaces — The Places Between">
+  <meta property="og:description" content="Explore the unsettling beauty of liminal spaces — empty corridors, abandoned malls, silent pools.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Noise overlay -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 1 — HERO / ENTRY
+  ═══════════════════════════════════════════ -->
+  <section id="hero" class="hero">
+    <div class="hero__bg">
+      <img src="images/hero_corridor.png" alt="" aria-hidden="true" class="hero__img">
+      <div class="hero__fog" aria-hidden="true"></div>
+    </div>
+    <div class="hero__content">
+      <h1 class="hero__title reveal">
+        <span class="hero__title-line">You've been</span>
+        <span class="hero__title-line hero__title-line--accent">here before.</span>
+      </h1>
+      <p class="hero__sub reveal reveal--delay-1">The spaces between where you were and where you're going.</p>
+    </div>
+    <div class="hero__scroll-indicator" aria-hidden="true">
+      <span class="hero__scroll-text">scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 2 — WHAT ARE LIMINAL SPACES?
+  ═══════════════════════════════════════════ -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__text">
+          <span class="section-label reveal">01 — Definition</span>
+          <h2 class="section-heading reveal">What Are<br>Liminal Spaces?</h2>
+          <p class="about__body reveal reveal--delay-1">
+            Liminal spaces are transitional areas — hallways, waiting rooms, empty parking lots at 3 AM. 
+            Places designed to be passed through, never lingered in. They exist as thresholds between 
+            one destination and the next.
+          </p>
+          <p class="about__body reveal reveal--delay-2">
+            When captured empty, stripped of their intended purpose and the people who give them meaning, 
+            they become deeply unsettling. Something about them triggers a primal recognition — a memory 
+            of a place you've been, a dream you can't quite recall.
+          </p>
+          <p class="about__body about__body--muted reveal reveal--delay-2">
+            The word <em>liminal</em> comes from the Latin <em>līmen</em>, meaning "threshold."
+          </p>
+        </div>
+        <div class="about__image-wrap reveal">
+          <img src="images/gallery_hallway.png" alt="An empty hallway stretching into the distance, fluorescent lights overhead" class="about__image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 3 — THE GALLERY
+  ═══════════════════════════════════════════ -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <span class="section-label reveal">02 — Gallery</span>
+      <h2 class="section-heading reveal">The Spaces</h2>
+      <p class="gallery__intro reveal reveal--delay-1">Familiar places, emptied of meaning.</p>
+
+      <nav class="gallery__filters reveal reveal--delay-1" aria-label="Gallery filters">
+        <button class="gallery__filter gallery__filter--active" data-filter="all">All</button>
+        <button class="gallery__filter" data-filter="corridors">Corridors</button>
+        <button class="gallery__filter" data-filter="pools">Pools</button>
+        <button class="gallery__filter" data-filter="malls">Malls</button>
+        <button class="gallery__filter" data-filter="stairs">Stairs</button>
+        <button class="gallery__filter" data-filter="rooms">Rooms</button>
+      </nav>
+
+      <div class="gallery__grid">
+        <article class="gallery__item reveal" data-category="corridors">
+          <div class="gallery__item-inner">
+            <img src="images/gallery_hallway.png" alt="Empty school hallway with fluorescent lighting" class="gallery__img" loading="lazy">
+            <div class="gallery__caption">
+              <span class="gallery__caption-tag">Corridor</span>
+              <h3 class="gallery__caption-title">Hallway B-12</h3>
+              <p class="gallery__caption-text">Third floor, east wing. The lights stay on.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="gallery__item reveal" data-category="pools">
+          <div class="gallery__item-inner">
+            <img src="images/gallery_pool.png" alt="Empty indoor swimming pool with turquoise water" class="gallery__img" loading="lazy">
+            <div class="gallery__caption">
+              <span class="gallery__caption-tag">Pool</span>
+              <h3 class="gallery__caption-title">Still Water</h3>
+              <p class="gallery__caption-text">No one has swum here in years. The water hasn't moved.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="gallery__item gallery__item--wide reveal" data-category="malls">
+          <div class="gallery__item-inner">
+            <img src="images/gallery_mall.png" alt="Abandoned mall with closed storefronts" class="gallery__img" loading="lazy">
+            <div class="gallery__caption">
+              <span class="gallery__caption-tag">Mall</span>
+              <h3 class="gallery__caption-title">Level 2, East Court</h3>
+              <p class="gallery__caption-text">The music stopped playing three months ago. Nobody noticed.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="gallery__item reveal" data-category="stairs">
+          <div class="gallery__item-inner">
+            <img src="images/gallery_stairs.png" alt="Concrete stairwell with harsh fluorescent lighting" class="gallery__img" loading="lazy">
+            <div class="gallery__caption">
+              <span class="gallery__caption-tag">Stairs</span>
+              <h3 class="gallery__caption-title">Between Floors</h3>
+              <p class="gallery__caption-text">You've been climbing for a while now.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="gallery__item reveal" data-category="rooms">
+          <div class="gallery__item-inner">
+            <img src="images/gallery_room.png" alt="Empty waiting room with old chairs and fluorescent lights" class="gallery__img" loading="lazy">
+            <div class="gallery__caption">
+              <span class="gallery__caption-tag">Room</span>
+              <h3 class="gallery__caption-title">Waiting Room #4</h3>
+              <p class="gallery__caption-text">Your appointment was an hour ago. Nobody came.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="gallery__item reveal" data-category="corridors">
+          <div class="gallery__item-inner">
+            <img src="images/hero_corridor.png" alt="Long hotel corridor stretching into darkness" class="gallery__img" loading="lazy">
+            <div class="gallery__caption">
+              <span class="gallery__caption-tag">Corridor</span>
+              <h3 class="gallery__caption-title">Room 237</h3>
+              <p class="gallery__caption-text">Every door looks the same. You can't remember which one is yours.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 4 — WHY DO THEY UNSETTLE US?
+  ═══════════════════════════════════════════ -->
+  <section id="psychology" class="psychology">
+    <div class="container">
+      <span class="section-label reveal">03 — Psychology</span>
+      <h2 class="section-heading reveal">Why Do They<br>Unsettle Us?</h2>
+      <p class="psychology__intro reveal reveal--delay-1">
+        The unease isn't random. It's a collision between what your brain expects and what it finds.
+      </p>
+
+      <div class="psychology__cards">
+        <article class="psych-card reveal">
+          <div class="psych-card__number" aria-hidden="true">01</div>
+          <h3 class="psych-card__title">Spatial Memory</h3>
+          <p class="psych-card__text">
+            Your brain maps spaces by their purpose and occupants. A hallway without walkers, 
+            a mall without shoppers — the map breaks. You recognize the place but not the context.
+          </p>
+        </article>
+
+        <article class="psych-card reveal reveal--delay-1">
+          <div class="psych-card__number" aria-hidden="true">02</div>
+          <h3 class="psych-card__title">Absence of Purpose</h3>
+          <p class="psych-card__text">
+            These spaces were designed for human activity. Without it, they become architectural 
+            ghosts — structures that have outlived their meaning.
+          </p>
+        </article>
+
+        <article class="psych-card reveal reveal--delay-2">
+          <div class="psych-card__number" aria-hidden="true">03</div>
+          <h3 class="psych-card__title">Temporal Displacement</h3>
+          <p class="psych-card__text">
+            Empty spaces exist outside of time. There are no clocks, no schedules, no day or night. 
+            You could have been here for five minutes or five hours.
+          </p>
+        </article>
+
+        <article class="psych-card reveal">
+          <div class="psych-card__number" aria-hidden="true">04</div>
+          <h3 class="psych-card__title">The Backrooms</h3>
+          <p class="psych-card__text">
+            Internet folklore imagines an infinite network of empty rooms behind reality — 
+            yellowish wallpaper, damp carpet, buzzing fluorescents. A place you "noclip" into. 
+            The fear that emptiness might be endless.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 5 — THE EXPERIENCE
+  ═══════════════════════════════════════════ -->
+  <section id="experience" class="experience">
+    <div class="experience__ambient" aria-hidden="true"></div>
+    <div class="container">
+      <span class="section-label reveal">04 — The Experience</span>
+      <h2 class="section-heading reveal">What It Feels Like</h2>
+
+      <div class="experience__passage" id="experience-scroll" aria-live="off">
+        <p class="experience__line reveal">You walk into a building you don't recognize.</p>
+        <p class="experience__line reveal">The lights are on. The air conditioning hums.</p>
+        <p class="experience__line reveal">You passed through the entrance, but you don't remember opening a door.</p>
+        <p class="experience__line reveal">The hallway stretches in both directions. Identical.</p>
+        <p class="experience__line reveal">Your footsteps echo, but just a half-second too late.</p>
+        <p class="experience__line reveal">There's a chair by the wall. Someone was sitting here recently.</p>
+        <p class="experience__line reveal">A clock on the wall. It says 3:14. It always says 3:14.</p>
+        <p class="experience__line reveal">You hear the soft buzz of a vending machine around the corner.</p>
+        <p class="experience__line reveal">When you turn the corner, there's another hallway.</p>
+        <p class="experience__line reveal">You've been here before.</p>
+        <p class="experience__line experience__line--accent reveal">You've always been here.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 6 — FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <blockquote class="footer__quote reveal">
+        <p>"The scariest thing about empty rooms is that they're waiting for someone."</p>
+      </blockquote>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Liminal Spaces</p>
+        <p class="footer__note">A study in architectural unease</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
